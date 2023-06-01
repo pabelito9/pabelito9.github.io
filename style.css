@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-image: url(img/background.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+/* główna część strony ⬇ ________________________________________________________*/
+.login-bar {
+    background-color: rgb(48, 45, 45);
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-bar-element {
+    margin: 0 15px 0 15px;
+}
+
+header {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: rgb(46, 36, 36);
+    border-radius: 30px;
+    width: 60%;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    padding: 20px;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav-element {
+    margin: 0px 20px 0px 20px;
+}
+
+.content {
+    height: 80%;
+    width: 100%;
+    background-color: rgb(24, 22, 22);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.content-element {
+    overflow: auto;
+    padding: auto;
+    margin: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(49, 25, 25);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100%;
+}
+
+.footer-element {
+    margin: 0 20px 20px 20px;
+}
+
+footer h2 {
+    color: #e0a142;
+}
+
+ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* główna część strony ⬆ ________________________________________________________*/
+
+/* guzik 1 ⬇ ________________________________________________________*/
+.button1 {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #af943b;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+  
+.button1:hover {
+    background-color: #c48e1b;
+    box-shadow: 0 0 20px #c48f1b9d;
+    transform: scale(1.1);
+}
+  
+.button1:active {
+    background-color: #af943b;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+/* guzik 1 ⬆ ________________________________________________________*/
+
+/* guzik 2 ⬇ ________________________________________________________*/
+.button2 {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+  
+.button2:focus,
+.button2:hover {
+    color: #fff;
+}
+  
+.button2:focus:after,
+.button2:hover:after {
+    width: 100%;
+    left: 0%;
+}
+  
+.button2:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+/* guzik 2 ⬆ ________________________________________________________*/
+
+/* link ⬇ ________________________________________________________*/
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #dd500f;
+}
+/* link ⬆ ________________________________________________________*/
+
+.content p {
+    font-size: 1.4em;
+}
+
+img.cover {
+    float: right;
+    border: 2.5px solid #ce9142;
+    height: 350px;
+    margin: 0 0 20px 20px;
+    width: auto;
+    border-radius: 10px;
+}
+
+img.story {
+    float: left;
+    border: 2.5px solid #ce9142;
+    height: 200px;
+    margin: 0 20px 20px 0;
+    width: auto;
+    border-radius: 10px;
+}
+
+img.gameplay {
+    float: right;
+    border: 2.5px solid #ce9142;
+    height: 200px;
+    margin: 0 0 20px 20px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.content h2 {
+    color: #ce9142;
+}
+
+.content hr {
+    border: 2px solid #ce9142;
+    border-radius: 3px;
+}
+
+/* photo to gallery ⬇ ________________________________________________________*/
+
+
+
+.gallery-photo img {
+    border: 5px solid #ce9142;
+    padding: 10px;
+    border-radius: 10px;
+    height: 370px;
+    width: 180px;
+    transition: all 1s ease-in-out;
+    
+}
+
+.gallery-photo img:hover {
+    transform: scale(90%);
+    opacity: 0.3;
+}
+
+.gallery-text {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+}
+
+.card-photo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: auto;
+}
+
+/* photo to gallery ⬆ ________________________________________________________*/
+
+@media (max-width: 1500px) {
+    img.cover {
+        height: 250px;
+    }
+    
+    img.story {
+        height: 150px;
+    }
+    
+    img.gameplay {
+        height: 150px;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    main {
+        width: 78%;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    .gallery-photo img {
+        height: 289px;
+        width: 140px;
+    }
+}
+
+@media (max-width: 1050px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-element {
+        margin: 10px 20px 10px 20px;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 700px) {
+    img.cover {
+        height: 150px;
+    }
+    
+    img.story {
+        height: 110px;
+    }
+    
+    img.gameplay {
+        height: 110px;
+    }
+
+    .content p {
+        font-size: 0.7em;
+    }
+
+    .button2 {
+        font-size: 10px;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
+
+    .gallery-photo img {
+        height: 165px;
+        width: 80px;
+    }
+    
+}
